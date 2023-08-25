@@ -1,0 +1,28 @@
+.home {
+    width: 100%;
+}
+
+.homenav {
+    width: 100%;
+    height: 10vh;
+    text-align: left;
+    background-color: #CCD5DF;
+    padding: 10px 0;
+}
+
+.homenav>img {
+    width: 30%;
+    height: 100%;
+    margin: 0 10%;
+}
+
+.webcontent {
+    width: 100%;
+    height: 90vh;
+}
+
+.webcontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

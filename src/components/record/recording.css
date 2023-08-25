@@ -1,0 +1,28 @@
+.recoding {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.start {
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    background-color: #CCD5DF;
+    border-radius: 25px;
+    font-size: 20px;
+    font-style: 500;
+    color: white;
+}
+
+.stop {
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    background-color: #4591E1;
+    border-radius: 25px;
+    font-size: 20px;
+    font-style: 500;
+    color: white;
+}
