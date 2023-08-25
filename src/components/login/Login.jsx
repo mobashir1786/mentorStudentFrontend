@@ -12,9 +12,12 @@ const Login = () => {
         // console.log(firstname,lastnane, number, email, password);
         axios.post("https://mentor-student-backend.vercel.app/login", { email: email, password: password })
             .then(res => {
-                console.log(res)
-                document.cookie = res.data.token + "; expires=" + Date.now() + 1 * 24 * 60 * 60 * 1000;
-                window.location.href = 'https://mentor-student-frontend.vercel.app'
+                if (res.data.key === 1) {
+                    document.cookie = "token=" + res.data.token + "; expires=" + Date.now() + 1 * 24 * 60 * 60 * 1000;
+                    window.location.href = 'https://mentor-student-frontend-gules.vercel.app/'
+                } else {
+                    alert(res.data.message);
+                }
             }).catch(e => {
                 console.log(e);
             })

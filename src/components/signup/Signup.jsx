@@ -15,7 +15,8 @@ const Signup = () => {
             .then(res => {
                 console.log(res)
                 document.cookie = res.data.token + "; expires=" + Date.now() + 1 * 24 * 60 * 60 * 1000;
-                window.location.href = 'https://mentor-student-frontend.vercel.app'
+                alert(res.data.message);
+                window.location.href = 'https://mentor-student-frontend-gules.vercel.app/';
             }).catch(e => {
                 console.log(e);
             })
